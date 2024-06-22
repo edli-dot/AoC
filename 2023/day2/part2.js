@@ -38,7 +38,6 @@ fs.readFile(filePath, 'utf-8', async (err, data) => {
       for (let k = 0; k < data[i][1][j].length; k++) {
         //iterate through each color of the draw
         let color = Object.keys(data[i][1][j][k])[0];
-        // console.log(color, color[0], data[i][1][j].length);
         switch (color) {
           case 'blue':
             blueB += data[i][1][j][k][color];
